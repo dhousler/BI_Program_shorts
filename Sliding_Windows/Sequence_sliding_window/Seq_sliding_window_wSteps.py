@@ -17,7 +17,7 @@ def slide(seq, window, step):
 
     print(seq)
     seqLen = len(seq)
-    true_window = window
+    window
 
     start, finish, pos = 0, window, 0
 
@@ -26,7 +26,8 @@ def slide(seq, window, step):
     for i in range(seqLen): # loop over length of the sequence
         if (0 < window <= seqLen) and (0 < step < window): # check win_size and steps within boundaries
 
-            wSeq = seq[start:finish] # MAIN CALCULATION NO STEPS
+            # WINDOW SETTINGS CALCULATION
+            wSeq = seq[start:finish]
             start += step
             finish += step
 
